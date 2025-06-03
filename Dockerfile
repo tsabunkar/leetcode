@@ -5,7 +5,7 @@ FROM node:20-alpine
 WORKDIR /usr/src/app
 
 # Copy the JavaScript file into the container
-COPY 1480.Running-Sum-of-1D-Array.js .
+COPY ./ .
 
 # Default command
-CMD ["node", "1480.Running-Sum-of-1D-Array.js"]
+CMD ["node", "1672.richest-customer-wealth.js"]
