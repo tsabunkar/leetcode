@@ -8,4 +8,4 @@ WORKDIR /usr/src/app
 COPY ./ .
 
 # Default command
-CMD ["node", "1672.richest-customer-wealth.js"]
+CMD ["node", "412.fizz-buzz.js"]
