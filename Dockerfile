@@ -8,4 +8,4 @@ WORKDIR /usr/src/app
 COPY ./ .
 
 # Default command
-CMD ["node", "412.fizz-buzz.js"]
+CMD ["node", "1342.js"]
