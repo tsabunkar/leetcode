@@ -8,4 +8,4 @@ WORKDIR /usr/src/app
 COPY ./ .
 
 # Default command
-CMD ["node", "1342.js"]
+CMD ["node", "876.js"]
