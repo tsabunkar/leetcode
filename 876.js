@@ -71,8 +71,12 @@ var middleNode = function (head) {
   console.log("wholeMiddle length is ", wholeMiddle);
 
   // return the singlylinkedlist from the middlenode
+  let current1 = head;
+  for (let index = 1; index < wholeMiddle; index++) {
+    current1 = current1.next;
+  }
 
-  let singlylinkedlistFromMiddlenode = new ListNode(0);
+  return current1;
 };
 
 console.log(middleNode(linkedList1));
