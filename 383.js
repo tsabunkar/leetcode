@@ -16,16 +16,22 @@ var canConstruct = function (ransomNote, magazine) {
   console.log(ranMap);
   console.log(magMap);
 
-  // check if all the elements and occurance matches from each element in ranMap inside magMap
-  /*   for (const ranChar of ranArray) {
-    for (const magChar of magArr) {
-      if (ranChar !== magChar) {
-      }
+  // check if all the elements and min(occurance) matches from each element present in ranMap inside magMap
+  for (const ranKey in ranMap) {
+    if (ranMap[ranKey] > magMap[ranKey] || !magMap[ranKey]) {
+      return false;
     }
-  } */
+  }
+
+  return true;
 };
 
-console.log(canConstruct("abca", "aab"));
+console.log(canConstruct("aa", "aab"));
+console.log(canConstruct("a", "b"));
+console.log(canConstruct("aa", "ab"));
+console.log(
+  canConstruct("bg", "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj")
+);
 
 function convertArrayToMap(ranArray, ranMap) {
   for (const ranChar of ranArray) {
