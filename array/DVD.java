@@ -19,11 +19,22 @@ public class DVD {
 
     public static void main(String[] args) {
 
-        DVD[] dvdCollections = new DVD[1];
+        DVD[] dvdCollections = new DVD[3];
 
         // The actual code for creating an Array to hold DVD's.
         dvdCollections[0] = new DVD("Inception", 2010, "Christopher Nolan");
+        dvdCollections[1] = new DVD("Taara Zamin Par", 2018, "Amir Khan");
+        dvdCollections[2] = new DVD("Goal", 2001, "John");
         System.out.println(Arrays.toString(dvdCollections));
+
+        // reading array using for in looop
+        for (DVD dvdCollection : dvdCollections) {
+            // Print the current value of square.
+            System.out.println(dvdCollection);
+        }
+
+        int capacity = dvdCollections.length;
+        System.out.println("The Array has a capacity of " + capacity);
 
     }
 }
